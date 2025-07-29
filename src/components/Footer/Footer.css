@@ -1,5 +1,6 @@
 .footer {
-  padding: 10px;
+  justify-content: center;
+  padding: 20px;
   display: flex;
   background-color: blue;
 }
@@ -26,6 +27,7 @@
 }
 
 .footer__link {
+  margin-top: 12px;
   color: gold;
   text-align: right;
 }
@@ -38,5 +40,13 @@
 
   .footer__statement-container {
     width: 80%;
+  }
+
+  .footer__links-title {
+    text-align: center;
+  }
+
+  .footer__link {
+    text-align: center;
   }
 }

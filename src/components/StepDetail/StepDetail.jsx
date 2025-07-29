@@ -53,7 +53,7 @@ function StepDetail() {
     api.submitStepAnswers(step.stepNumber, answers).then(() => {
       localStorage.removeItem(`step-${step.stepNumber}-draft`);
 
-      navigate("/steps");
+      navigate("/");
     });
   };
 
