@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
-import Logo from "./src/assets/StepWorkIcon.svg";
+import Logo from "../../assets/StepWorkIcon.svg";
 
 function Header() {
   return (
