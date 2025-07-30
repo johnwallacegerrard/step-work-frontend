@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/johnwallacegerrard/step_work",
+  "homepage": "https://github.com/johnwallacegerrard/step-work-frontend",
   "scripts": {
     "dev": "vite --open",
     "build": "vite build",
