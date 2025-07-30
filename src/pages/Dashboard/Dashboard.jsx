@@ -26,7 +26,7 @@ function Dashboard() {
   }, []);
 
   return (
-    <div className="dashboard">
+    <main className="dashboard">
       <h2 className="dashboard__welcome-message">
         Welcome back, {currentUser?.firstName + " " + currentUser?.lastInitial}!
       </h2>
@@ -55,7 +55,7 @@ function Dashboard() {
         <Steps />
         <JournalEntry />
       </div>
-    </div>
+    </main>
   );
 }
 

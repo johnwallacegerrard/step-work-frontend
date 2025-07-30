@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Steps() {
   return (
-    <div className="steps">
+    <section className="steps">
       <h2 className="steps__title">Steps</h2>
       <div className="steps__container">
         {steps.map((step) => {
@@ -18,7 +18,7 @@ function Steps() {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 }
 

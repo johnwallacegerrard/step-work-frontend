@@ -89,7 +89,7 @@ function StepDetail() {
           <button
             type="button"
             onClick={handleSaveAndExit}
-            className="step__btn"
+            className="step__btn step__btn_secondary"
           >
             Save and Exit
           </button>

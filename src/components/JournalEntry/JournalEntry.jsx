@@ -12,7 +12,7 @@ function JournalEntry() {
   });
 
   return (
-    <div className="journal">
+    <section className="journal">
       <h2 className="journal__title">Journal</h2>
       <form className="journal__form">
         <h3 className="journal__date">{currentDate}</h3>
@@ -30,7 +30,7 @@ function JournalEntry() {
           <button className="journal__submit-entry-btn">Submit Entry</button>
         </div>
       </form>
-    </div>
+    </section>
   );
 }
 

@@ -3,7 +3,7 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="footer__statement-container">
         <p className="footer__statement">
           "The 12 steps are a powerful and effective spiritual process. Working
@@ -14,22 +14,32 @@ function Footer() {
         </p>
         <p>-Levi B.</p>
       </div>
-      <div className="footer__links">
+      <div className="footer__links-container">
         <h2 className="footer__links-title">Helpful Links</h2>
-        <Link className="footer__link" to={"https://www.aa.org/"}>
-          Alcoholics Anonymous
-        </Link>
-        <Link className="footer__link" to={"https://na.org/"}>
-          Narcotics Anonymous
-        </Link>
-        <Link
-          className="footer__link"
-          to={"https://www.samhsa.gov/find-help/helplines/national-helpline"}
-        >
-          National Substance Abuse and Mental Health Hotlines
-        </Link>
+        <ul className="footer__links">
+          <li>
+            <Link className="footer__link" to={"https://www.aa.org/"}>
+              Alcoholics Anonymous
+            </Link>
+          </li>
+          <li>
+            <Link className="footer__link" to={"https://na.org/"}>
+              Narcotics Anonymous
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="footer__link"
+              to={
+                "https://www.samhsa.gov/find-help/helplines/national-helpline"
+              }
+            >
+              National Substance Abuse and Mental Health Hotlines
+            </Link>
+          </li>
+        </ul>
       </div>
-    </div>
+    </footer>
   );
 }
 

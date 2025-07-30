@@ -63,3 +63,20 @@
   text-align: center;
   color: gold;
 }
+
+.step__btn_secondary {
+  background-color: gold;
+  color: blue;
+}
+
+@media screen and (max-width: 627px) {
+  .step__btns {
+    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step__btn {
+    width: 80%;
+  }
+}
