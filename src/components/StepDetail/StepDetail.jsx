@@ -6,7 +6,10 @@ import Api from "../../utils/api";
 import StepIntroModal from "../StepIntroModal/StepIntroModal";
 
 const api = new Api({
-  baseUrl: "http://localhost:3001",
+  baseUrl:
+    import.meta.env.MODE === "production"
+      ? "https://api.stepwork.mooo.com"
+      : "http://localhost:3001",
   headers: {
     "Content-Type": "application/json",
   },
