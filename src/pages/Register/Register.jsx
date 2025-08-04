@@ -22,7 +22,6 @@ function Registration() {
 
   return (
     <div className="Register">
-      <h1 className="Register__title">StepWork</h1>
       <form onSubmit={handleSubmit} className="Register__form">
         <label htmlFor="first-name" className="Register__form-label">
           First Name

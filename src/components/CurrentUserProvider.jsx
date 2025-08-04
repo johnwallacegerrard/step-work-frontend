@@ -4,6 +4,7 @@ import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import Dashboard from "../pages/Dashboard/Dashboard";
 import StepDetail from "../components/StepDetail/StepDetail";
+import Journal from "../pages/Journal/Journal";
 import CurrentUserContext from "../contexts/CurrentUserContext";
 import Auth from "../utils/auth";
 
@@ -22,6 +23,7 @@ function CurrentUserProvider() {
     lastInitial: "",
     stepProgress: "",
     currentStep: "",
+    journal: [],
   });
 
   const navigate = useNavigate();
@@ -57,6 +59,7 @@ function CurrentUserProvider() {
           lastInitial: data.lastInitial,
           stepProgress: data.stepProgress,
           currentStep: data.currentStep,
+          journal: data.journal,
         });
         navigate("/");
       })
@@ -102,13 +105,13 @@ function CurrentUserProvider() {
     >
       <Routes>
         <Route path="/" element={isLoggedIn ? <Dashboard /> : <Login />} />
-
-        <Route path="/:stepNumber" element={<StepDetail />} />
+        <Route path="/myjournal" element={<Journal />} />
         <Route path="/login" element={isLoggedIn ? <Dashboard /> : <Login />} />
         <Route
           path="/register"
           element={isLoggedIn ? <Dashboard /> : <Register />}
         />
+        <Route path="/:stepNumber" element={<StepDetail />} />
       </Routes>
     </CurrentUserContext.Provider>
   );

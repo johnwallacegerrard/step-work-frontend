@@ -19,7 +19,6 @@ function Login() {
 
   return (
     <div className="Login">
-      <h1 className="Login__title">StepWork</h1>
       <form className="Login__form">
         <label htmlFor="email" className="Login__form-label">
           Email

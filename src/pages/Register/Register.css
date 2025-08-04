@@ -11,6 +11,7 @@
 }
 
 .Register__form {
+  width: 40%;
   display: flex;
   flex-direction: column;
 }
@@ -28,7 +29,6 @@
 .Register__form-input {
   color: black;
   background: white;
-  width: 440px;
   height: 24px;
   border: none;
   margin-top: 3px;
@@ -51,7 +51,7 @@
   border-radius: 6px;
   align-items: center;
   background-color: blue;
-  width: 25%;
+  width: 40%;
   height: 40px;
   text-align: center;
   color: gold;

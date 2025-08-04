@@ -1,0 +1,21 @@
+.myjournal {
+  background-color: white;
+  color: black;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.myjournal__title {
+  margin-right: auto;
+  font-size: 48px;
+  color: blue;
+  font-family: "Nunito", sans-serif;
+}
+
+.myjournal__entry-container {
+  display: flex;
+  flex-direction: column-reverse;
+}

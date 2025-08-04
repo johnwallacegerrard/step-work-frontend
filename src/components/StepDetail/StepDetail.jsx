@@ -42,14 +42,13 @@ function StepDetail() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const token = localStorage.getItem("jwt");
 
     const isComplete = answers.every((ans) => ans.trim() !== "");
     if (!isComplete) {
       alert("Please answer all questions before submitting.");
       return;
     }
-
+    console.log(answers);
     api.submitStepAnswers(step.stepNumber, answers).then(() => {
       localStorage.removeItem(`step-${step.stepNumber}-draft`);
 

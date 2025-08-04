@@ -5,6 +5,7 @@ import Steps from "../../components/Steps/Steps";
 import JournalEntry from "../../components/JournalEntry/JournalEntry";
 
 function Dashboard() {
+  console.log("dashboard is rendered!");
   const { currentUser, handleSignOut } = useContext(CurrentUserContext);
   console.log(currentUser);
   const [quote, setQuote] = useState(null);

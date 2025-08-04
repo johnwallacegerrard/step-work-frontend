@@ -20,6 +20,15 @@ class Api {
       body: JSON.stringify(answers),
     }).then(this._checkResponse);
   }
+
+  submitJournalEntry({ journalEntry }) {
+    const token = localStorage.getItem("jwt");
+    return fetch(`${this._baseUrl}/api/journal`, {
+      method: "POST",
+      headers: { ...this._headers, Authorization: `Bearer ${token}` },
+      body: JSON.stringify({ entry: journalEntry }),
+    }).then(this._checkResponse);
+  }
 }
 
 export default Api;
