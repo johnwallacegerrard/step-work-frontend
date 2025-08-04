@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "&& scp -r ./dist/* tripletenuser@domainname.example.com:/home/tripletenuser/frontend"
+    "deploy": "scp -r ./dist/* tripletenuser@domainname.example.com:/home/tripletenuser/frontend"
   },
   "dependencies": {
     "axios": "^1.10.0",
