@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/step_work/",
+  base: process.env.NODE_ENV === "production" ? "/step-work-frontend" : "/",
   plugins: [react()],
   server: {
     port: 3000,
