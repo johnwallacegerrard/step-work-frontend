@@ -21,14 +21,14 @@ function Registration() {
   };
 
   return (
-    <div className="Register">
-      <form onSubmit={handleSubmit} className="Register__form">
-        <label htmlFor="first-name" className="Register__form-label">
+    <div className="register">
+      <form onSubmit={handleSubmit} className="register__form">
+        <label htmlFor="first-name" className="register__form-label">
           First Name
           <input
             id="first-name"
             type="string"
-            className="Register__form-input"
+            className="register__form-input"
             placeholder="First Name"
             required
             onChange={(e) => {
@@ -37,12 +37,12 @@ function Registration() {
             value={firstName}
           />
         </label>
-        <label htmlFor="last-name-initial" className="Register__form-label">
+        <label htmlFor="last-name-initial" className="register__form-label">
           Last Initial
           <input
             id="last-name-initial"
             type="string"
-            className="Register__form-input"
+            className="register__form-input"
             placeholder="Last Initial"
             maxLength={1}
             required
@@ -52,12 +52,12 @@ function Registration() {
             value={lastInitial}
           />
         </label>
-        <label htmlFor="email" className="Register__form-label">
+        <label htmlFor="email" className="register__form-label">
           Email
           <input
             id="email"
             type="email"
-            className="Register__form-input"
+            className="register__form-input"
             placeholder="Email"
             required
             onChange={(e) => {
@@ -66,12 +66,12 @@ function Registration() {
             value={email}
           />
         </label>
-        <label htmlFor="password" className="Register__form-label">
+        <label htmlFor="password" className="register__form-label">
           Password
           <input
             id="password"
             type="password"
-            className="Register__form-input"
+            className="register__form-input"
             placeholder="Password"
             required
             onChange={(e) => {
@@ -80,11 +80,14 @@ function Registration() {
             value={password}
           />
         </label>
-        <div className="Register__form-btns">
-          <button type="submit" className="Register__form-btn">
+        <div className="register__form-btns">
+          <button type="submit" className="register__form-btn">
             Register
           </button>
-          <Link to="/Login" className="Register__form-btn">
+          <Link
+            to="/Login"
+            className="register__form-btn register__form-btn_secondary"
+          >
             Sign In
           </Link>
         </div>

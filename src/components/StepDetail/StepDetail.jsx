@@ -65,8 +65,8 @@ function StepDetail() {
 
   return (
     <div className="step">
-      <h1 className="step__title">Step One</h1>;
-      <p className="step__quote">{step.stepQuote}</p>;
+      <h1 className="step__title">Step One</h1>
+      <p className="step__quote">{step.stepQuote}</p>
       <form onSubmit={handleSubmit} className="step__questions">
         {step.questions.map((question, index) => (
           <div key={index} className="step__question">

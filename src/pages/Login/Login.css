@@ -1,4 +1,4 @@
-.Login {
+.login {
   height: 100vh;
   width: 100vw;
   color: blue;
@@ -10,13 +10,13 @@
   background-color: white;
 }
 
-.Login__form {
+.login__form {
   width: 75%;
   display: flex;
   flex-direction: column;
 }
 
-.Login__form-label {
+.login__form-label {
   margin-top: 24px;
   display: flex;
   flex-direction: column;
@@ -26,7 +26,7 @@
   border-bottom: 1px solid black;
 }
 
-.Login__form-input {
+.login__form-input {
   color: black;
   background: white;
   height: 24px;
@@ -34,18 +34,20 @@
   margin-top: 3px;
 }
 
-.Login__form-input:focus {
+.login__form-input:focus {
   border: none;
 }
 
-.Login__form-btns {
+.login__form-btns {
   margin-top: 20px;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  gap: 20px;
 }
 
-.Login__form-btn {
+.login__form-btn {
   width: 40%;
   display: flex;
   justify-content: center;
@@ -56,4 +58,9 @@
   height: 40px;
   text-align: center;
   color: gold;
+}
+
+.login__form-btn_secondary {
+  background-color: gold;
+  color: blue;
 }

@@ -18,14 +18,14 @@ function Login() {
   };
 
   return (
-    <div className="Login">
-      <form className="Login__form">
-        <label htmlFor="email" className="Login__form-label">
+    <div className="login">
+      <form className="login__form">
+        <label htmlFor="email" className="login__form-label">
           Email
           <input
             id="email"
             type="email"
-            className="Login__form-input"
+            className="login__form-input"
             placeholder="Email"
             required
             onChange={(e) => {
@@ -34,12 +34,12 @@ function Login() {
             value={email}
           />
         </label>
-        <label htmlFor="password" className="Login__form-label">
+        <label htmlFor="password" className="login__form-label">
           Password
           <input
             id="password"
             type="password"
-            className="Login__form-input"
+            className="login__form-input"
             placeholder="Password"
             required
             onChange={(e) => {
@@ -48,15 +48,18 @@ function Login() {
             value={password}
           />
         </label>
-        <div className="Login__form-btns">
+        <div className="login__form-btns">
           <button
             onClick={handleSubmit}
             type="submit"
-            className="Login__form-btn"
+            className="login__form-btn"
           >
             Sign In
           </button>
-          <Link to="/register" className="Login__form-btn">
+          <Link
+            to="/register"
+            className="login__form-btn login__form-btn_secondary"
+          >
             Register
           </Link>
         </div>

@@ -29,7 +29,8 @@ function Dashboard() {
   return (
     <main className="dashboard">
       <h2 className="dashboard__welcome-message">
-        Welcome back, {currentUser?.firstName + " " + currentUser?.lastInitial}!
+        Welcome back,{" "}
+        {currentUser?.firstName + " " + currentUser?.lastInitial + "!"}
       </h2>
       <button
         type="button"
