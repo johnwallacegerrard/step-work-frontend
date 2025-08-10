@@ -10,16 +10,26 @@
 .steps__container {
   border: 2px black solid;
   border-radius: 8px;
+  padding: 10px;
 }
 
 .steps__step-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.steps__step {
+.steps__step-number {
   font-family: "Nunito", sans-serif;
-  color: blue;
+  color: #0000ff;
+  font-size: 24px;
+}
+
+.steps__step-btn {
+  color: gold;
+  border-radius: 8px;
+  padding: 6px;
+  background-color: blue;
 }
 
 @media screen and (max-width: 627px) {

@@ -24,7 +24,7 @@ function CurrentUserProvider() {
   const [currentUser, setCurrentUser] = useState({
     firstName: "",
     lastInitial: "",
-    stepProgress: "",
+    stepProgress: [],
     currentStep: "",
     journal: [],
   });

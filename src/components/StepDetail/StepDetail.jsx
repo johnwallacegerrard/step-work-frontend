@@ -1,5 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import CurrentUserContext from "../../contexts/CurrentUserContext";
 import steps from "../../assets/steps";
 import "./StepDetail.css";
 import Api from "../../utils/api";
@@ -16,6 +17,7 @@ const api = new Api({
 });
 
 function StepDetail() {
+  const { currentUser } = useContext(CurrentUserContext);
   const { stepNumber } = useParams();
   const navigate = useNavigate();
   const step = steps.find((s) => s.stepNumber === parseInt(stepNumber));
@@ -24,7 +26,12 @@ function StepDetail() {
 
   useEffect(() => {
     const saved = localStorage.getItem(`step-${step.stepNumber}-draft`);
-    if (saved) {
+    const foundStep = currentUser.stepProgress.find(
+      (step) => step.stepNumber === parseInt(stepNumber)
+    );
+    if (foundStep) {
+      setAnswers(foundStep.answers);
+    } else if (saved) {
       setAnswers(JSON.parse(saved));
     }
   }, [step.stepNumber]);

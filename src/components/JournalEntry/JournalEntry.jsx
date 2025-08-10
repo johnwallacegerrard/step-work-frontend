@@ -4,7 +4,10 @@ import "./JournalEntry.css";
 import Api from "../../utils/api";
 
 const api = new Api({
-  baseUrl: "http://localhost:3001",
+  baseUrl:
+    import.meta.env.MODE === "production"
+      ? "https://api.stepwork.mooo.com"
+      : "http://localhost:3001",
   headers: {
     "Content-Type": "application/json",
   },
